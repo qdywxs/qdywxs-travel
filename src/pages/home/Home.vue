@@ -1,7 +1,6 @@
 <template>
   <div>
-    <div class="home">Home</div>
-    <router-link to="/list" class="home">List</router-link>
+    hello, qdywxs.
   </div>
 
 </template>
@@ -13,7 +12,4 @@ export default {
 </script>
 
 <style scoped>
-.home {
-  font-size: 2em;
-}
 </style>
