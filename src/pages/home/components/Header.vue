@@ -22,31 +22,32 @@ export default {
 
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
+
 .header
   display: flex
   line-height: .86rem
-  background: $bgColor
   color: #fff
+  background: $bgColor
   .header-left
-    width: .64rem
     float: left
+    width: .64rem
     .back-icon
       display: block
       text-align: center
       font-size: .56rem
   .header-input
     flex: 1
-    height: .64rem
-    line-height: .64rem
     margin-top: .12rem
     margin-left: .2rem
     padding-left: .12rem
+    height: .64rem
+    line-height: .64rem
+    color: #ccc
     background: #fff
     border-radius: .1rem
-    color: #ccc
   .header-right
-    width: 1.24rem
     float: right
+    width: 1.24rem
     text-align: center
     .arrow-icon
       margin-left: -0.1rem
