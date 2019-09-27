@@ -16,54 +16,20 @@
 <script>
 export default {
   name: 'HomeIcons',
+  props: {
+    list: Array
+  },
   data () {
     return {
       swiperOption: {
         autoplay: false
-      },
-      iconList: [{
-        id: '0001',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList01.png',
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList02.png',
-        desc: '滑雪季'
-      }, {
-        id: '0003',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList03.png',
-        desc: '泡温泉'
-      }, {
-        id: '0004',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList04.png',
-        desc: '动植园'
-      }, {
-        id: '0005',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList05.png',
-        desc: '游乐园'
-      }, {
-        id: '0006',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList06.png',
-        desc: '必游榜单'
-      }, {
-        id: '0007',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList07.png',
-        desc: '演出'
-      }, {
-        id: '0008',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList08.png',
-        desc: '城市观光'
-      }, {
-        id: '0009',
-        imgUrl: 'https://qdywxs.github.io/travel-images/iconList09.png',
-        desc: '一日游'
-      }]
+      }
     }
   },
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []
@@ -79,7 +45,6 @@ export default {
 <style lang="stylus" scoped>
 @import '~styles/varibles.styl'
 @import '~styles/mixins.styl'
-
 .icons >>> .swiper-container
   height: 0
   padding-bottom: 50%
