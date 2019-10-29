@@ -36,17 +36,17 @@ export default {
     background-image: linear-gradient(top, rgba(0, 0, 0, 0), rgba(0,0,0, .8))
     .banner-title
       flex: 1
-      font-size: .32rem
       padding: 0 .2rem
+      font-size: .32rem
     .banner-number
       height: .32rem
-      line-height: .32rem
       padding: 0 .4rem
       margin-top: .14rem
-      border-radius: .2rem
-      background: rgba(0, 0, 0, .8)
       font-size: .24rem
       color: #fff
+      line-height: .32rem
+      border-radius: .2rem
+      background: rgba(0, 0, 0, .8)
       .banner-icon
         font-size: .24rem
 </style>
