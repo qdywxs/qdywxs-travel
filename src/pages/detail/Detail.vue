@@ -14,6 +14,12 @@ import DetailList from './components/List'
 import DetailComment from './components/Comment'
 export default {
   name: 'Detail',
+  components: {
+    DetailBanner,
+    DetailHeader,
+    DetailList,
+    DetailComment
+  },
   data () {
     return {
       list: [{
@@ -31,17 +37,9 @@ export default {
         title: '故宫预售成人票'
       }]
     }
-  },
-  components: {
-    DetailBanner,
-    DetailHeader,
-    DetailList,
-    DetailComment
   }
 }
 </script>
 
 <style lang="stylus" scoped>
-.content
-  height: 20rem
 </style>
