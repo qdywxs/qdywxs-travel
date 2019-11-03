@@ -28,22 +28,8 @@
 <script>
 export default {
   name: 'DetailComment',
-  data () {
-    return {
-      commentList: [{
-        id: '0001',
-        star: '★★★★★',
-        date: 'q*9  2019-11-01',
-        content: '我们是早上8:30的第一场，有珍宝馆的套票，王蕾导游讲解很到位，妙语连珠，互动性强，服务热情，路线和讲解安排合理，游玩很开心有意义，对故宫有了深入全面的了解，不虚此行，不留遗憾，深有体会，故宫博物院完美打卡。',
-        imgUrl: ['https://qdywxs.github.io/travel-images/commentImg01.jpg', 'https://qdywxs.github.io/travel-images/commentImg02.jpg', 'https://qdywxs.github.io/travel-images/commentImg03.jpg', 'https://qdywxs.github.io/travel-images/commentImg04.jpg', 'https://qdywxs.github.io/travel-images/commentImg05.jpg', 'https://qdywxs.github.io/travel-images/commentImg06.jpg']
-      }, {
-        id: '0002',
-        star: '★★★★★',
-        date: 'z*3  2019-11-01',
-        content: '非常好的体验，推荐大福晋导游。故宫太大，又是历史文化浓重的宫殿，如果没有导游，自己瞎逛浪费时间和体力，也不明白很多殿的故事，每个人一个无线耳麦，离导游三十米内都听的很清楚，导游讲解的风趣幽默，不错的一次体验。',
-        imgUrl: ['https://qdywxs.github.io/travel-images/commentImg01.jpg', 'https://qdywxs.github.io/travel-images/commentImg02.jpg', 'https://qdywxs.github.io/travel-images/commentImg03.jpg', 'https://qdywxs.github.io/travel-images/commentImg04.jpg', 'https://qdywxs.github.io/travel-images/commentImg05.jpg', 'https://qdywxs.github.io/travel-images/commentImg06.jpg']
-      }]
-    }
+  props: {
+    commentList: Array
   }
 }
 </script>
