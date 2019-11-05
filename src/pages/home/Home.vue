@@ -20,6 +20,7 @@ export default {
   name: 'Home',
   components: {
     HomeHeader,
+    // HomeHeader: () => import('./components/Header'),
     HomeSwiper,
     HomeIcons,
     HomeRecommend,
